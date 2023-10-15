@@ -1,6 +1,17 @@
 <app-top-header></app-top-header>
-<div class="container d-flex justify-content-around mt-5">
+<div class="container d-flex justify-content-around mt-5 mb-5">
  <app-card></app-card>
  <app-card></app-card>
  <app-card></app-card> 
+</div>
+
+<hr>
+<hr>
+<div class="text-center mt-5 lead fw-bold">
+    Assignment: Card (2) - Dynamic Cards [Sharing data between child and parent components]
+</div>
+<div class="container second-assignment-dynamic mb-5">
+    <div class="mt-5 card-container container d-flex justify-content-center gap-4 bg-primary pt-4 pb-4">
+        <app-dynamic-card *ngFor = "let cardObj of cards" [details] = "cardObj" style="padding-bottom: 55px"></app-dynamic-card>
+    </div>
 </div>
